@@ -1,0 +1,50 @@
+<RCC>
+  <qresource prefix="images">
+    <file>images/images/PyDracula.png</file>
+    <file>images/images/PyDracula_vertical.png</file>
+    <file>images/images/port.png</file>
+  </qresource>
+  <qresource prefix="icon">
+    <file>images/icon/icons8-close-24.png</file>
+    <file>images/icon/icons8-compress-24.png</file>
+    <file>images/icon/icons8-expand-24.png</file>
+    <file>images/icon/icons8-full-screen-24.png</file>
+    <file>images/icon/icons8-minus-24.png</file>
+    <file>images/icon/icons8-car-60.png</file>
+    <file>images/icon/icons8-car-white.png</file>
+    <file>images/icon/icons8-close-32 (1).png</file>
+    <file>images/icon/icons8-compress-32.png</file>
+    <file>images/icon/icons8-expand-32.png</file>
+    <file>images/icon/icons8-subtract-32.png</file>
+    <file>images/icon/icons8-help-32.png</file>
+    <file>images/icon/icons8-upload-32.png</file>
+    <file>images/icon/icons8-align-center-26.png</file>
+    <file>images/icon/icons8-analyze-50.png</file>
+    <file>images/icon/icons8-light-on-50.png</file>
+    <file>images/icon/icons8-right-65.png</file>
+    <file>images/icon/icons8-left-65.png</file>
+    <file>images/icon/icons8-graph-report-32.png</file>
+    <file>images/icon/icons8-analyse-60.png</file>
+    <file>images/icon/icons8-help-64.png</file>
+    <file>images/icon/icons8-information-64.png</file>
+    <file>images/icon/icons8-light-on-64.png</file>
+    <file>images/icon/icons8-report-64.png</file>
+    <file>images/icon/icons8-upload-64.png</file>
+    <file>images/icon/icons8-measure-64.png</file>
+    <file>images/icon/icons8-analyse.png</file>
+    <file>images/icon/icons8-help.png</file>
+    <file>images/icon/icons8-light-on.png</file>
+    <file>images/icon/icons8-measure.png</file>
+    <file>images/icon/icons8-report.png</file>
+    <file>images/icon/icons8-upload.png</file>
+    <file>images/images/project.png</file>
+    <file>images/icon/icons8-left.png</file>
+    <file>images/icon/icons8-right.png</file>
+    <file>images/images/measure-flow.png</file>
+    <file>images/images/measure-report-restruction.png</file>
+    <file>images/images/software-quality-model.jpg</file>
+    <file>images/icon/icons8-java-60.png</file>
+    <file>images/icon/icons8-circled-c-80.png</file>
+  </qresource>
+
+</RCC>
