@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:ChrgPlgPosn_VD.arxml]
+class = TDATA-ARA
+
+[item:ChrgPlgPosn_VD.c]
+class = SWSRC
+
+[item:ChrgPlgPosn_VD.h]
+class = SWHDR
+
+[item:ChrgPlgPosn_VD_private.h]
+class = SWHDR
+
+[item:ChrgPlgPosn_VD_types.h]
+class = SWHDR
+

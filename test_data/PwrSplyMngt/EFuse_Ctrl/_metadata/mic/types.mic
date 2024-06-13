@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:EFuse_Ctrl.arxml]
+class = TDATA-ARA
+
+[item:EFuse_Ctrl.c]
+class = SWSRC
+
+[item:EFuse_Ctrl.h]
+class = SWHDR
+
+[item:EFuse_Ctrl_private.h]
+class = SWHDR
+
+[item:EFuse_Ctrl_types.h]
+class = SWHDR
+

@@ -1,0 +1,14 @@
+[common]
+domain = UAES
+
+[item:SuctnDoor_DD.c]
+class = SWSRC
+
+[item:SuctnDoor_DD.h]
+class = SWHDR
+
+[item:SuctnDoor_DD_private.h]
+class = SWHDR
+
+[item:SuctnDoor_DD_types.h]
+class = SWHDR

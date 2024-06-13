@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:HvacDampr_DD.arxml]
+class = TDATA-ARA
+
+[item:HvacDampr_DD.c]
+class = SWSRC
+
+[item:HvacDampr_DD.h]
+class = SWHDR
+
+[item:HvacDampr_DD_private.h]
+class = SWHDR
+
+[item:HvacDampr_DD_types.h]
+class = SWHDR
+

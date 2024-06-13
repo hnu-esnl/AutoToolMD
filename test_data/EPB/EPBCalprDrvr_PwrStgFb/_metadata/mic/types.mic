@@ -1,0 +1,18 @@
+[common]
+domain = UAES
+
+[item]
+class = FX
+
+[item:EPBCalprDrvr_PwrStgFb.c]
+class = SWSRC
+
+[item:EPBCalprDrvr_PwrStgFb.h]
+class = SWHDR
+
+[item:EPBCalprDrvr_PwrStgFb_private.h]
+class = SWHDR
+
+[item:EPBCalprDrvr_PwrStgFb_types.h]
+class = SWHDR
+

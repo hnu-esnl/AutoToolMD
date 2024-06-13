@@ -1,0 +1,57 @@
+[common]
+domain = UAES
+
+[item]
+class = BC
+
+[item:AppEep.c]
+class = SWSRC
+
+[item:AppEep.h]
+class = SWHDR
+
+[item:AppNvM_Api.c]
+class = SWSRC
+
+[item:AppNvM_Api.h]
+class = SWHDR
+
+[item:AppNvM_Block.c]
+class = SWSRC
+
+[item:AppNvM_Block.h]
+class = SWHDR
+
+[item:AppNvM_BlockID.h]
+class = SWHDR
+
+[item:AppNvM_CS.c]
+class = SWSRC
+
+[item:AppNvM_MemMap.h]
+class = SWHDR
+
+[item:AppNvM_SR.c]
+class = SWSRC
+
+[item:AppNvM_SRPrm.c]
+class = SWSRC
+
+[item:AppPrm.c]
+class = SWSRC
+
+[item:AppPrm.h]
+class = SWHDR
+
+[item:NvM_Api.h]
+class = SWHDR
+
+[item:NvM_DataCfg.c]
+class = SWSRC
+
+[item:NvM_DataCfg.h]
+class = SWHDR
+
+[item:NvM_DataType.h]
+class = SWHDR
+

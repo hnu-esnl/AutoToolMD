@@ -1,0 +1,14 @@
+[common]
+domain = UAES
+
+[item:Lock_DiagEnbCnd.c]
+class = SWSRC
+
+[item:Lock_DiagEnbCnd.h]
+class = SWHDR
+
+[item:Lock_DiagEnbCnd_private.h]
+class = SWHDR
+
+[item:Lock_DiagEnbCnd_types.h]
+class = SWHDR

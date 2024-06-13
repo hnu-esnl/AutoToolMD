@@ -1,0 +1,14 @@
+[common]
+domain = UAES
+
+[item:Lock_DD.c]
+class = SWSRC
+
+[item:Lock_DD.h]
+class = SWHDR
+
+[item:Lock_DD_private.h]
+class = SWHDR
+
+[item:Lock_DD_types.h]
+class = SWHDR

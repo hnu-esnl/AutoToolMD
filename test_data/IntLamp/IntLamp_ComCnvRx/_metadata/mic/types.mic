@@ -1,0 +1,15 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:IntLamp_ComCnvRx.arxml]
+class = TDATA-ARA
+
+[item:IntLamp_ComCnvRx.c]
+class = SWSRC
+
+[item:IntLamp_ComCnvRx.h]
+class = SWHDR
+

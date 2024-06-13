@@ -1,0 +1,22 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:EFuse_DD.arxml]
+class = TDATA-ARA
+
+[item:EFuse_DD.c]
+class = SWSRC
+
+[item:EFuse_DD.h]
+class = SWHDR
+
+[item:EFuse_DD_private.h]
+class = SWHDR
+
+[item:EFuse_DD_types.h]
+class = SWHDR
+
+

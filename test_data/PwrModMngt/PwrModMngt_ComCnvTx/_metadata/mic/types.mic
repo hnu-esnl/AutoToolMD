@@ -1,0 +1,15 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:PwrModMngt_ComCnvTx.arxml]
+class = TDATA-ARA
+
+[item:PwrModMngt_ComCnvTx.c]
+class = SWSRC
+
+[item:PwrModMngt_ComCnvTx.h]
+class = SWHDR
+

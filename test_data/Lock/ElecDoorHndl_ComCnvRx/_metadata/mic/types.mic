@@ -1,0 +1,14 @@
+[common]
+domain = UAES
+
+[item:ElecDoorHndl_ComCnvRx.c]
+class = SWSRC
+
+[item:ElecDoorHndl_ComCnvRx.h]
+class = SWHDR
+
+[item:ElecDoorHndl_ComCnvRx_private.h]
+class = SWHDR
+
+[item:ElecDoorHndl_ComCnvRx_types.h]
+class = SWHDR

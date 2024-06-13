@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:DcChrgrPileU1_DD.arxml]
+class = TDATA-ARA
+
+[item:DcChrgrPileU1_DD.c]
+class = SWSRC
+
+[item:DcChrgrPileU1_DD.h]
+class = SWHDR
+
+[item:DcChrgrPileU1_DD_private.h]
+class = SWHDR
+
+[item:DcChrgrPileU1_DD_types.h]
+class = SWHDR
+

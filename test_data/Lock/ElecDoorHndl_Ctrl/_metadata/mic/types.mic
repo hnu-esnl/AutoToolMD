@@ -1,0 +1,8 @@
+[common]
+domain = UAES
+
+[item:ElecDoorHndl_Ctrl.c]
+class = SWSRC
+
+[item:ElecDoorHndl_Ctrl.h]
+class = SWHDR

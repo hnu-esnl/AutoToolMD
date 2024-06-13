@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model IntLamp_ComCnvTx
+Model version                : 1.30
+Simulink Coder version       : Simulink Coder 9.0 (R2018b) 24-May-2018
+XML source code generated on : Thu Sep 22 22:55:02 2022
+Model Checksum               : 3712607693 1351129284 1518932599 238516095
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>UAES</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ASW</SHORT-NAME>
+                    <ELEMENTS>
+                        <SWC-IMPLEMENTATION UUID="35ee3f93-275b-58d7-88ee-a1f35e92692f">
+                            <SHORT-NAME>Implementation</SHORT-NAME>
+                            <CODE-DESCRIPTORS>
+                                <CODE>
+                                    <SHORT-NAME>Code</SHORT-NAME>
+                                    <ARTIFACT-DESCRIPTORS>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>IntLamp_ComCnvTx_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>IntLamp_ComCnvTx_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                    </ARTIFACT-DESCRIPTORS>
+                                </CODE>
+                            </CODE-DESCRIPTORS>
+                            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                            <RESOURCE-CONSUMPTION>
+                                <SHORT-NAME>RsrcCons_IntLamp_ComCnvTx</SHORT-NAME>
+                            </RESOURCE-CONSUMPTION>
+                            <SW-VERSION>1.30.1</SW-VERSION>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.1 (R2018b) 24-May-2018</USED-CODE-GENERATOR>
+                            <VENDOR-ID>0</VENDOR-ID>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/InternalBehavior</BEHAVIOR-REF>
+                        </SWC-IMPLEMENTATION>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <APPLICATION-SW-COMPONENT-TYPE UUID="7f3c8544-4397-531c-aa66-ee9ae01273b8">
+                                    <SHORT-NAME>IntLamp_ComCnvTx</SHORT-NAME>
+                                    <PORTS>
+                                        <R-PORT-PROTOTYPE UUID="4477907c-01d8-5bfd-7146-9d349bf9a642">
+                                            <SHORT-NAME>gINL_bIL_TrunkLightOutputSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="1b70148a-9561-5397-f3f4-658192eae380">
+                                            <SHORT-NAME>gINL_bIL_TrunkLightOutputFaultSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputFaultSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="01484cb4-86cc-53a6-29db-1f6ae9f0e3c5">
+                                            <SHORT-NAME>gINL_bIL_RLCourtesyLightOutputSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="5e1821ce-fdb9-50ce-5c43-6fb1b1e346d9">
+                                            <SHORT-NAME>gINL_bIL_RLCourtesyLightOutputFaultSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputFaultSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="375d6e17-1a3a-5a43-9c56-07a77f5a406d">
+                                            <SHORT-NAME>gINL_bIL_RRCourtesyLightOutputSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="55683295-8c4c-5ee5-69ee-9fbf5afd0ada">
+                                            <SHORT-NAME>gINL_bIL_RRCourtesyLightOutputFaultSt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputFaultSt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="bec5c5f6-cc92-5008-5de5-6674dfafd251">
+                                            <SHORT-NAME>gINL_bIL_BkgLightOutputSt_T</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputSt_T/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputSt_T</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="700a7598-ed93-5ce4-dc48-9ce6e09f9685">
+                                            <SHORT-NAME>gINL_bIL_BkgLightOutputFaultSt_T</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputFaultSt_T/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputFaultSt_T</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="986d300f-a079-5e40-2878-285cb0870877">
+                                            <SHORT-NAME>ComTx_bIL_TrunkLightOutputSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="f8b8728c-22d5-5a50-ee5d-4d95c123227b">
+                                            <SHORT-NAME>ComTx_bIL_TrunkLightOutputFaultSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputFaultSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="fa3c292a-0f36-5ff3-d39e-56c0291dea51">
+                                            <SHORT-NAME>ComTx_bIL_RLCourtesyLightOutputSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="10007cd6-e4a5-55bc-03ea-0e4c3c78d1ed">
+                                            <SHORT-NAME>ComTx_bIL_RLCourtesyLightOutputFaultSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputFaultSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="9fcede8e-01c8-59de-6d57-8450edd9d7f3">
+                                            <SHORT-NAME>ComTx_bIL_RRCourtesyLightOutputSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="f9201352-cb78-5904-1e1a-aa6c404ed5a1">
+                                            <SHORT-NAME>ComTx_bIL_RRCourtesyLightOutputFaultSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputFaultSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputFaultSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="33352ac2-b11b-553f-b987-7aea47051e19">
+                                            <SHORT-NAME>ComTx_bIL_BkgLightOutputSt_T</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputSt_T/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputSt_T</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="b4af3e30-6d61-5471-e55a-8642e8a9033a">
+                                            <SHORT-NAME>ComTx_bIL_BkgLightOutputFaultSt_T</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputFaultSt_T/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_boolean</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputFaultSt_T</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                    </PORTS>
+                                    <INTERNAL-BEHAVIORS>
+                                        <SWC-INTERNAL-BEHAVIOR UUID="5b6c33b1-709e-5ff0-3c01-3505b4335597">
+                                            <SHORT-NAME>InternalBehavior</SHORT-NAME>
+                                            <EVENTS>
+                                                <INIT-EVENT UUID="6f1da073-fc25-5d5f-4d38-95d494aeccd4">
+                                                    <SHORT-NAME>IntLamp_ComCnvTx_InitEvent</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/InternalBehavior/IntLamp_ComCnvTx_Runnable_Init</START-ON-EVENT-REF>
+                                                </INIT-EVENT>
+                                                <TIMING-EVENT UUID="951f08de-051f-58af-a45c-9dc5e2d21f95">
+                                                    <SHORT-NAME>TMT_IntLamp_ComCnvTx_Runnable_10ms</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/InternalBehavior/IntLamp_ComCnvTx_Runnable_10ms</START-ON-EVENT-REF>
+                                                    <PERIOD>0.01</PERIOD>
+                                                </TIMING-EVENT>
+                                            </EVENTS>
+                                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                            <RUNNABLES>
+                                                <RUNNABLE-ENTITY UUID="0dcf1d9e-3f7f-5748-3e79-2089f239f6b1">
+                                                    <SHORT-NAME>IntLamp_ComCnvTx_Runnable_Init</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <SYMBOL>IntLamp_ComCnvTx_Runnable_Init</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                                <RUNNABLE-ENTITY UUID="bb0230a4-01fc-5f5f-81b7-bfeed42fc330">
+                                                    <SHORT-NAME>IntLamp_ComCnvTx_Runnable_10ms</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                                        <VARIABLE-ACCESS UUID="6279d027-4e1e-5b37-b3a5-b351805bcaa4">
+                                                            <SHORT-NAME>IN_gINL_bIL_BkgLightOutputFaultSt_T_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_BkgLightOutputFaultSt_T</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputFaultSt_T/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="3290445c-3969-52bf-7764-5bd71c59e67a">
+                                                            <SHORT-NAME>IN_gINL_bIL_BkgLightOutputSt_T_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_BkgLightOutputSt_T</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_BkgLightOutputSt_T/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="8e3cf1a3-9940-5dac-7c73-91686fc854a2">
+                                                            <SHORT-NAME>IN_gINL_bIL_RLCourtesyLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_RLCourtesyLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="ba3e67a5-8cdd-5955-99aa-79c5bd2f1969">
+                                                            <SHORT-NAME>IN_gINL_bIL_RLCourtesyLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_RLCourtesyLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RLCourtesyLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="7d839b0c-7fcf-5754-4f76-d463a58a7b6e">
+                                                            <SHORT-NAME>IN_gINL_bIL_RRCourtesyLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_RRCourtesyLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="a6bb5e88-8361-585d-5506-1e15d0093ed6">
+                                                            <SHORT-NAME>IN_gINL_bIL_RRCourtesyLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_RRCourtesyLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_RRCourtesyLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="b987a1e1-a651-5b89-e79d-14350e447385">
+                                                            <SHORT-NAME>IN_gINL_bIL_TrunkLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_TrunkLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="903b3099-db26-5b3b-c2a2-d5d9901b41ef">
+                                                            <SHORT-NAME>IN_gINL_bIL_TrunkLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/gINL_bIL_TrunkLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gINL_bIL_TrunkLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                                    <DATA-SEND-POINTS>
+                                                        <VARIABLE-ACCESS UUID="60e86d50-26c6-5161-7077-ca716fb6762c">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_TrunkLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_TrunkLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="7897cd2d-50b9-50ca-c4bf-45c111387ad1">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_TrunkLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_TrunkLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_TrunkLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="89ba4569-32f9-5e3d-0611-6efc1bf99a9a">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_RLCourtesyLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_RLCourtesyLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="68bd1eb2-048f-5a99-4a67-31460a7cd9e3">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_RLCourtesyLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_RLCourtesyLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RLCourtesyLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="0ed3d1ee-54a5-59fa-e086-bd6891d402e4">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_RRCourtesyLightOutputSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_RRCourtesyLightOutputSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="c1605fb4-667f-5a51-6a45-c91083260e88">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_RRCourtesyLightOutputFaultSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_RRCourtesyLightOutputFaultSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_RRCourtesyLightOutputFaultSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="72dbceef-64e7-568e-4576-67e404a6bf86">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_BkgLightOutputSt_T_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_BkgLightOutputSt_T</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputSt_T/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="07be8efe-4756-5a7a-ef39-cb1a921a4731">
+                                                            <SHORT-NAME>OUT_ComTx_bIL_BkgLightOutputFaultSt_T_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/IntLamp_ComCnvTx/ComTx_bIL_BkgLightOutputFaultSt_T</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/ComTx_bIL_BkgLightOutputFaultSt_T/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-SEND-POINTS>
+                                                    <SYMBOL>IntLamp_ComCnvTx_Runnable_10ms</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                            </RUNNABLES>
+                                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                        </SWC-INTERNAL-BEHAVIOR>
+                                    </INTERNAL-BEHAVIORS>
+                                </APPLICATION-SW-COMPONENT-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>PortInterfaces</SHORT-NAME>
+                            <ELEMENTS>
+                                <SENDER-RECEIVER-INTERFACE UUID="03fa9d41-8a88-5bf7-b7f5-72e2357de806">
+                                    <SHORT-NAME>gINL_bIL_TrunkLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="851742c9-df17-5e83-15bd-da48e27c12ed">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="4226b8a6-2d9f-58f2-c962-a11b54a7deef">
+                                    <SHORT-NAME>gINL_bIL_TrunkLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="2f0426c3-7ac2-50ff-cf30-6aa46b7bf381">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="a6d897cb-426b-5a6d-b67b-2cd0f076bd89">
+                                    <SHORT-NAME>gINL_bIL_RLCourtesyLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="86891617-f2cc-5181-71c5-6c53e4d2546f">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="5b1e943f-a61d-575a-fc75-94b0710ba91a">
+                                    <SHORT-NAME>gINL_bIL_RLCourtesyLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="3bbb1ccd-bba9-5bd6-2a9a-f7023e0e8514">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="0c21813d-7f1b-5fa7-6df9-3b28977e5954">
+                                    <SHORT-NAME>gINL_bIL_RRCourtesyLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="15d60d91-487f-5e30-62e4-0a18364eece1">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="75603193-1916-59be-bc5e-e566f70476cd">
+                                    <SHORT-NAME>gINL_bIL_RRCourtesyLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="b36b8c57-4451-5a1b-270b-b148d56d90cc">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="4ff1a3d3-5612-5c1e-91fe-4b5897209ac9">
+                                    <SHORT-NAME>gINL_bIL_BkgLightOutputSt_T</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="0a1d444e-4edf-5efd-0d9c-9c44525f5e89">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="b548566b-d1af-5c87-9fc3-22ee749082de">
+                                    <SHORT-NAME>gINL_bIL_BkgLightOutputFaultSt_T</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="8134b18b-7050-5af0-89a4-d41f1ff0721b">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="ce96b732-04c5-56df-4417-29d0fbb94181">
+                                    <SHORT-NAME>ComTx_bIL_TrunkLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="52d967a4-26ef-562f-6c51-df70507a2b6d">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="66a78836-a329-59ca-92c8-8774e5c942c6">
+                                    <SHORT-NAME>ComTx_bIL_TrunkLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="dcd7730f-6152-5ebc-9311-bd5b0917f453">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="176ba21a-c9fd-577f-0545-1c04e98fce51">
+                                    <SHORT-NAME>ComTx_bIL_RLCourtesyLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="3a7900b0-85b7-5e90-1905-dd064c0e299d">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="798dd6e5-b204-59ea-824c-7cfb30debb6b">
+                                    <SHORT-NAME>ComTx_bIL_RLCourtesyLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="1ac48221-3607-5cde-36cd-c3bb78d80ccd">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="f53a35b2-c2a6-581b-1771-be3a6ce1cc07">
+                                    <SHORT-NAME>ComTx_bIL_RRCourtesyLightOutputSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="0022a3e7-eeae-508f-544d-0c88a38d5418">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="d72d1142-059b-5138-6371-bfb73dc940d0">
+                                    <SHORT-NAME>ComTx_bIL_RRCourtesyLightOutputFaultSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="caf86958-91a8-5dae-20cf-cc9116063fb3">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="daae1088-7859-5dce-978e-5f8351d3959e">
+                                    <SHORT-NAME>ComTx_bIL_BkgLightOutputSt_T</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="c9419bcf-8c2b-5e8a-7eb1-f72067c42fb9">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="9ae3bab3-e21e-5e2b-7d87-4c3256f32c4f">
+                                    <SHORT-NAME>ComTx_bIL_BkgLightOutputFaultSt_T</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="f4c16c1c-0c93-500a-0a3a-d860e9b5886b">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

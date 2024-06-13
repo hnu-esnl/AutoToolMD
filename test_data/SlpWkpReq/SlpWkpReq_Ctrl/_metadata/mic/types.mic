@@ -1,0 +1,12 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:SlpWkpReq_Ctrl.c]
+class = SWSRC
+
+[item:SlpWkpReq_Ctrl.h]
+class = SWHDR
+

@@ -1,0 +1,8 @@
+[common]
+domain = UAES
+
+[item:Lock_Ctrl.c]
+class = SWSRC
+
+[item:Lock_Ctrl.h]
+class = SWHDR

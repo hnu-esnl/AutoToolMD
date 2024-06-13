@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model EPBCalprDrvr_DD
+Model version                : 1.10
+Simulink Coder version       : Simulink Coder 9.4 (R2020b) 29-Jul-2020
+XML source code generated on : Mon Jul 18 17:18:59 2022
+Model Checksum               : 3320297841 1923215190 2199230901 2726967483
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-1-3.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>AUTOSAR_Platform</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>BaseTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                        <SW-BASE-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <CATEGORY>FIXED_LENGTH</CATEGORY>
+                            <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                            <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                            <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                        </SW-BASE-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                    <ELEMENTS>
+                        <COMPU-METHOD>
+                            <SHORT-NAME>boolean_CompuMethod</SHORT-NAME>
+                            <CATEGORY>TEXTTABLE</CATEGORY>
+                            <UNIT-REF DEST="UNIT">/RB/ApplicationSW/PT/Units/NoUnit</UNIT-REF>
+                            <COMPU-INTERNAL-TO-PHYS>
+                                <COMPU-SCALES>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>FALSE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                    <COMPU-SCALE>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                        <COMPU-CONST>
+                                            <VT>TRUE</VT>
+                                        </COMPU-CONST>
+                                    </COMPU-SCALE>
+                                </COMPU-SCALES>
+                            </COMPU-INTERNAL-TO-PHYS>
+                        </COMPU-METHOD>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>DataConstrs</SHORT-NAME>
+                    <ELEMENTS>
+                        <DATA-CONSTR>
+                            <SHORT-NAME>boolean_DataConstr</SHORT-NAME>
+                            <DATA-CONSTR-RULES>
+                                <DATA-CONSTR-RULE>
+                                    <INTERNAL-CONSTRS>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                    </INTERNAL-CONSTRS>
+                                </DATA-CONSTR-RULE>
+                            </DATA-CONSTR-RULES>
+                        </DATA-CONSTR>
+                        <DATA-CONSTR>
+                            <SHORT-NAME>uint16_DataConstr</SHORT-NAME>
+                            <DATA-CONSTR-RULES>
+                                <DATA-CONSTR-RULE>
+                                    <INTERNAL-CONSTRS>
+                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                    </INTERNAL-CONSTRS>
+                                </DATA-CONSTR-RULE>
+                            </DATA-CONSTR-RULES>
+                        </DATA-CONSTR>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                    <ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>boolean</SHORT-NAME>
+                            <DESC>
+                                <L-2 L="FOR-ALL">boolean has the value space required to support the mathematical concept of 
+binary-valued logic: {true, false}.</L-2>
+                            </DESC>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/boolean</BASE-TYPE-REF>
+                                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR_Platform/CompuMethods/boolean_CompuMethod</COMPU-METHOD-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/DataConstrs/boolean_DataConstr</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                        <IMPLEMENTATION-DATA-TYPE>
+                            <SHORT-NAME>uint16</SHORT-NAME>
+                            <DESC>
+                                <L-2 L="FOR-ALL">uint16 represents integers with a minimum value of 0 and a maximum value of 65535.
+The order-relation on uint16 is: x &lt; y if y - x is positive.
+uint16 has a lexical representation consisting of a finite-length sequence 
+of decimal digits (#x30-#x39).
+
+For example: 1, 0, 1267, +10000.</L-2>
+                            </DESC>
+                            <CATEGORY>VALUE</CATEGORY>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR_Platform/DataConstrs/uint16_DataConstr</DATA-CONSTR-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE>
+                    </ELEMENTS>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>DataTypes</SHORT-NAME>
+            <ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE UUID="761C5788-438D-4761-AB8E-4F06A64E0989">
+                    <SHORT-NAME>rt_Arry_uint16_10</SHORT-NAME>
+                    <CATEGORY>ARRAY</CATEGORY>
+                    <SUB-ELEMENTS>
+                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="092d2e6d-f6d0-57db-54af-79dbd5d3568e">
+                            <SHORT-NAME>rt_Arry_uint16_10</SHORT-NAME>
+                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                            <ARRAY-SIZE>10</ARRAY-SIZE>
+                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                            <SW-DATA-DEF-PROPS>
+                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                </SW-DATA-DEF-PROPS-VARIANTS>
+                            </SW-DATA-DEF-PROPS>
+                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                    </SUB-ELEMENTS>
+                </IMPLEMENTATION-DATA-TYPE>
+            </ELEMENTS>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>RB</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ApplicationSW</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>PT</SHORT-NAME>
+                            <AR-PACKAGES>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>CompuMethods</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <COMPU-METHOD UUID="A6E8D82F-B73A-4A82-ABF3-C604D75102F7">
+                                            <SHORT-NAME>CM_boolean</SHORT-NAME>
+                                            <CATEGORY>TEXTTABLE</CATEGORY>
+                                            <UNIT-REF DEST="UNIT">/RB/ApplicationSW/PT/Units/NoUnit</UNIT-REF>
+                                            <COMPU-INTERNAL-TO-PHYS>
+                                                <COMPU-SCALES>
+                                                    <COMPU-SCALE>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">0</UPPER-LIMIT>
+                                                        <COMPU-CONST>
+                                                            <VT>FALSE</VT>
+                                                        </COMPU-CONST>
+                                                    </COMPU-SCALE>
+                                                    <COMPU-SCALE>
+                                                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">1</LOWER-LIMIT>
+                                                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                                        <COMPU-CONST>
+                                                            <VT>TRUE</VT>
+                                                        </COMPU-CONST>
+                                                    </COMPU-SCALE>
+                                                </COMPU-SCALES>
+                                            </COMPU-INTERNAL-TO-PHYS>
+                                        </COMPU-METHOD>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                                <AR-PACKAGE>
+                                    <SHORT-NAME>Units</SHORT-NAME>
+                                    <ELEMENTS>
+                                        <UNIT UUID="3DC0A61C-8460-4B17-98BD-0363049B67B8">
+                                            <SHORT-NAME>NoUnit</SHORT-NAME>
+                                            <FACTOR-SI-TO-UNIT>1</FACTOR-SI-TO-UNIT>
+                                            <OFFSET-SI-TO-UNIT>0</OFFSET-SI-TO-UNIT>
+                                        </UNIT>
+                                    </ELEMENTS>
+                                </AR-PACKAGE>
+                            </AR-PACKAGES>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+        <AR-PACKAGE>
+            <SHORT-NAME>UAES</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ASW</SHORT-NAME>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>BaseTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <SW-BASE-TYPE UUID="5F0F935B-ABEE-4495-9497-432111FED048">
+                                    <SHORT-NAME>boolean</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>BOOLEAN</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>boolean</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="98E61475-2E5A-4FB1-BF0C-BDBD857A8786">
+                                    <SHORT-NAME>uint16</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>16</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>uint16</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="931e6704-be8a-571a-1c87-d13fa2e7f50e">
+                                    <SHORT-NAME>uint32</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>32</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>uint32</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                                <SW-BASE-TYPE UUID="A9AA900A-82AA-4167-92E6-F6B1F3641901">
+                                    <SHORT-NAME>uint8</SHORT-NAME>
+                                    <CATEGORY>FIXED_LENGTH</CATEGORY>
+                                    <BASE-TYPE-SIZE>8</BASE-TYPE-SIZE>
+                                    <BASE-TYPE-ENCODING>NONE</BASE-TYPE-ENCODING>
+                                    <NATIVE-DECLARATION>uint8</NATIVE-DECLARATION>
+                                </SW-BASE-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataConstrs</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-CONSTR UUID="FB6611D4-4200-408E-9444-7973640A0CF6">
+                                    <SHORT-NAME>DC_boolean</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">1</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="1D50F495-9A7B-4FB0-BF6B-52EF219AC3A4">
+                                    <SHORT-NAME>DC_uint16</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">65535</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="4f9f2eb8-4913-5fbe-d3fa-726fd24f79b0">
+                                    <SHORT-NAME>DC_uint32</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">4294967295</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                                <DATA-CONSTR UUID="4A6D2220-C7D4-423E-A8AA-E1AB4CD9D4C7">
+                                    <SHORT-NAME>DC_uint8</SHORT-NAME>
+                                    <DATA-CONSTR-RULES>
+                                        <DATA-CONSTR-RULE>
+                                            <INTERNAL-CONSTRS>
+                                                <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                                                <UPPER-LIMIT INTERVAL-TYPE="CLOSED">255</UPPER-LIMIT>
+                                            </INTERNAL-CONSTRS>
+                                        </DATA-CONSTR-RULE>
+                                    </DATA-CONSTR-RULES>
+                                </DATA-CONSTR>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>DataTypeMappingSets</SHORT-NAME>
+                            <ELEMENTS>
+                                <DATA-TYPE-MAPPING-SET UUID="BD54E001-ED3D-4DD4-9798-FA3707F65508">
+                                    <SHORT-NAME>DTMS_EPBCalprDrvr_DD</SHORT-NAME>
+                                </DATA-TYPE-MAPPING-SET>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <IMPLEMENTATION-DATA-TYPE UUID="FBF644E3-BDC5-4B5F-AE27-775C0E9E9D42">
+                                    <SHORT-NAME>Array_uint16_10</SHORT-NAME>
+                                    <CATEGORY>ARRAY</CATEGORY>
+                                    <SUB-ELEMENTS>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="4e895ddb-1c3d-5d70-08cd-1c51aed6dcc1">
+                                            <SHORT-NAME>Array_uint16_10</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <ARRAY-SIZE>10</ARRAY-SIZE>
+                                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                    </SUB-ELEMENTS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="C0242F2F-7FCD-4F00-9D9B-9ED043B106CD">
+                                    <SHORT-NAME>Array_uint32_2</SHORT-NAME>
+                                    <CATEGORY>ARRAY</CATEGORY>
+                                    <SUB-ELEMENTS>
+                                        <IMPLEMENTATION-DATA-TYPE-ELEMENT UUID="5910cee3-1969-508d-9d12-a2e0cd37beb4">
+                                            <SHORT-NAME>Array_uint32_2</SHORT-NAME>
+                                            <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                                            <ARRAY-SIZE>2</ARRAY-SIZE>
+                                            <ARRAY-SIZE-SEMANTICS>FIXED-SIZE</ARRAY-SIZE-SEMANTICS>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint32</IMPLEMENTATION-DATA-TYPE-REF>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                        </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                                    </SUB-ELEMENTS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="54A5D249-53C1-40C9-A967-9AC5E017265C">
+                                    <SHORT-NAME>boolean</SHORT-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL">boolean has the value space required to support the mathematical concept of 
+binary-valued logic: {true, false}.</L-2>
+                                    </DESC>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/UAES/ASW/BaseTypes/boolean</BASE-TYPE-REF>
+                                                <COMPU-METHOD-REF DEST="COMPU-METHOD">/RB/ApplicationSW/PT/CompuMethods/CM_boolean</COMPU-METHOD-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/UAES/ASW/DataConstrs/DC_boolean</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="D8A4842F-A1EA-4D40-9E8D-C55DF676720E">
+                                    <SHORT-NAME>uint16</SHORT-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL">uint16 represents integers with a minimum value of 0 and a maximum value of 65535.
+The order-relation on uint16 is: x &lt; y if y - x is positive.
+uint16 has a lexical representation consisting of a finite-length sequence 
+of decimal digits (#x30-#x39).
+
+For example: 1, 0, 1267, +10000.</L-2>
+                                    </DESC>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/UAES/ASW/BaseTypes/uint16</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/UAES/ASW/DataConstrs/DC_uint16</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="38062355-1159-5a17-dffe-0b495cea08e0">
+                                    <SHORT-NAME>uint32</SHORT-NAME>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/UAES/ASW/BaseTypes/uint32</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/UAES/ASW/DataConstrs/DC_uint32</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                                <IMPLEMENTATION-DATA-TYPE UUID="BDAC0509-F360-46A1-B890-F0E08AA06984">
+                                    <SHORT-NAME>uint8</SHORT-NAME>
+                                    <DESC>
+                                        <L-2 L="FOR-ALL">uint8 represents integers with a minimum value of 0 and a maximum value of 255.
+The order-relation on uint8 is: x &lt; y if y - x is positive.
+uint8 has a lexical representation consisting of a finite-length sequence 
+of decimal digits (#x30-#x39).
+
+For example: 1, 0, 126, +10.</L-2>
+                                    </DESC>
+                                    <CATEGORY>VALUE</CATEGORY>
+                                    <SW-DATA-DEF-PROPS>
+                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                <BASE-TYPE-REF DEST="SW-BASE-TYPE">/UAES/ASW/BaseTypes/uint8</BASE-TYPE-REF>
+                                                <DATA-CONSTR-REF DEST="DATA-CONSTR">/UAES/ASW/DataConstrs/DC_uint8</DATA-CONSTR-REF>
+                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                    </SW-DATA-DEF-PROPS>
+                                </IMPLEMENTATION-DATA-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>PortInterfaces</SHORT-NAME>
+                            <ELEMENTS>
+                                <CLIENT-SERVER-INTERFACE UUID="44A4CF25-383A-4A6C-B59C-FA586497CC38">
+                                    <SHORT-NAME>IoHwAb_EPBHb</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <OPERATIONS>
+                                        <CLIENT-SERVER-OPERATION UUID="E924F77F-74E7-422D-BEE0-4AB036EDA516">
+                                            <SHORT-NAME>Get_AD_Valid</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="DBF3A0F9-8334-4167-9BC0-CEBD6873E3E1">
+                                                    <SHORT-NAME>EPB_AD_Valid</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="17E9F3BF-B088-4D5C-9EAA-15B7DA1B5BF9">
+                                            <SHORT-NAME>Get_CS1_Val</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="C73A8573-EE79-4517-B03D-06A930FF6C0F">
+                                                    <SHORT-NAME>cs1_Val</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/rt_Arry_uint16_10</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="1C42519C-3013-4B19-93BF-C30B749D1A6C">
+                                            <SHORT-NAME>Get_CS2_Val</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="19275A9F-CDBB-4336-9ADB-079906A0B748">
+                                                    <SHORT-NAME>cs2_Val</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/DataTypes/rt_Arry_uint16_10</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="F84DD1D5-AE1C-460A-BF10-B8F61AD4A7CB">
+                                            <SHORT-NAME>Get_Diag</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="AEFF9B72-A192-4DE2-898B-B496BBD4168C">
+                                                    <SHORT-NAME>EPBDiag_status</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/Array_uint32_2</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="261F108A-AC64-4F8C-8CEE-DB03AF561FB4">
+                                            <SHORT-NAME>Get_SH1_Val</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="0EEE3C90-FB4F-4ACE-844F-B1E21395A6C4">
+                                                    <SHORT-NAME>sh1_Val</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/Array_uint16_10</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="B9BEDC8F-9A22-4EDE-8694-3253AB215AA2">
+                                            <SHORT-NAME>Get_SH2_Val</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="41E6DBBA-8F1F-49BA-874E-791866501DEA">
+                                                    <SHORT-NAME>sh2_Val</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/Array_uint16_10</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="5B4E282D-3D61-40BC-B7B0-1FCA9D11F328">
+                                            <SHORT-NAME>Get_uBridge_Val</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="E295A5E8-3EA7-4609-BD1F-A63964C69609">
+                                                    <SHORT-NAME>uBridge_Val</SHORT-NAME>
+                                                    <CATEGORY>ARRAY</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/Array_uint16_10</TYPE-TREF>
+                                                    <DIRECTION>OUT</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="442C7AE6-6425-4D24-804B-A274C8343441">
+                                            <SHORT-NAME>Set_Mod</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="BB4A5363-6152-443B-ADCA-EC7809959E90">
+                                                    <SHORT-NAME>Hb_Mod</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                        <CLIENT-SERVER-OPERATION UUID="FD8114F1-AA81-427A-92CF-7C6A4D41CE56">
+                                            <SHORT-NAME>Set_Safemod</SHORT-NAME>
+                                            <ARGUMENTS>
+                                                <ARGUMENT-DATA-PROTOTYPE UUID="1CFF1208-AD5F-42F5-9F7F-2B7DC916F251">
+                                                    <SHORT-NAME>Safemode_Mod</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>NOT-ACCESSIBLE</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                    <DIRECTION>IN</DIRECTION>
+                                                </ARGUMENT-DATA-PROTOTYPE>
+                                            </ARGUMENTS>
+                                            <POSSIBLE-ERROR-REFS>
+                                                <POSSIBLE-ERROR-REF DEST="APPLICATION-ERROR">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/E_NOT_OK</POSSIBLE-ERROR-REF>
+                                            </POSSIBLE-ERROR-REFS>
+                                        </CLIENT-SERVER-OPERATION>
+                                    </OPERATIONS>
+                                    <POSSIBLE-ERRORS>
+                                        <APPLICATION-ERROR UUID="9C8AA889-1F78-470C-BC33-927968DE76CD">
+                                            <SHORT-NAME>E_NOT_OK</SHORT-NAME>
+                                            <ERROR-CODE>1</ERROR-CODE>
+                                        </APPLICATION-ERROR>
+                                    </POSSIBLE-ERRORS>
+                                </CLIENT-SERVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="A241E2D1-5EBF-4055-AD36-4BAD1E5950C3">
+                                    <SHORT-NAME>EPBCalprDrvr_flgClsdDrvrMos</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="D1661C65-70D9-49FE-9B31-4CFB92B24542">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                    <INVALIDATION-POLICYS>
+                                        <INVALIDATION-POLICY>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgClsdDrvrMos/Val</DATA-ELEMENT-REF>
+                                            <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                                        </INVALIDATION-POLICY>
+                                    </INVALIDATION-POLICYS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="CAF72086-02FC-4930-8005-E64DEBAC1883">
+                                    <SHORT-NAME>EPBCalprDrvr_flgSsmEnaLockLine</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="090A3469-208F-4032-B2D8-2511FDCDF1D1">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                    <INVALIDATION-POLICYS>
+                                        <INVALIDATION-POLICY>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaLockLine/Val</DATA-ELEMENT-REF>
+                                            <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                                        </INVALIDATION-POLICY>
+                                    </INVALIDATION-POLICYS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="A7D6321B-B156-4EE3-92D8-1BB9B3E9057F">
+                                    <SHORT-NAME>EPBCalprDrvr_flgSsmEnaRlesLine</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="E012CAFC-FE27-45D0-A177-039780E6042D">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/boolean</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                    <INVALIDATION-POLICYS>
+                                        <INVALIDATION-POLICY>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaRlesLine/Val</DATA-ELEMENT-REF>
+                                            <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                                        </INVALIDATION-POLICY>
+                                    </INVALIDATION-POLICYS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="4FF2F14B-6D39-48BA-B241-51BE6B0AB554">
+                                    <SHORT-NAME>EPBCalprDrvr_stHwDrvrCmd</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="449C779F-8B4C-4729-A345-68A16A5C0E22">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                    <INVALIDATION-POLICYS>
+                                        <INVALIDATION-POLICY>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stHwDrvrCmd/Val</DATA-ELEMENT-REF>
+                                            <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                                        </INVALIDATION-POLICY>
+                                    </INVALIDATION-POLICYS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="E6A12B55-9062-40B2-8EB2-9B15FE95476A">
+                                    <SHORT-NAME>EPBCalprDrvr_stMotCmd</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="D5E78F97-958C-49DF-A9B8-CD67EA5CA6DA">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                    <INVALIDATION-POLICYS>
+                                        <INVALIDATION-POLICY>
+                                            <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stMotCmd/Val</DATA-ELEMENT-REF>
+                                            <HANDLE-INVALID>DONT-INVALIDATE</HANDLE-INVALID>
+                                        </INVALIDATION-POLICY>
+                                    </INVALIDATION-POLICYS>
+                                </SENDER-RECEIVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <APPLICATION-SW-COMPONENT-TYPE UUID="14882B4E-9430-436A-B041-8DAF17A8BC8B">
+                                    <SHORT-NAME>EPBCalprDrvr_DD</SHORT-NAME>
+                                    <PORTS>
+                                        <R-PORT-PROTOTYPE UUID="FEF19531-9DAF-420C-AF90-2673DA90B14E">
+                                            <SHORT-NAME>EPBCalprDrvr_flgClsdDrvrMos</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgClsdDrvrMos/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>ComSpecd4b92df6_2fff877570301aa3</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgClsdDrvrMos</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="22628271-E00B-48AB-95EC-194231F9FD41">
+                                            <SHORT-NAME>EPBCalprDrvr_flgSsmEnaLockLine</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaLockLine/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>ComSpecbdc4641e_c3dc40990d6930d8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaLockLine</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="99EF7ADD-4C71-4E6B-81C0-400874F10C11">
+                                            <SHORT-NAME>EPBCalprDrvr_flgSsmEnaRlesLine</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaRlesLine/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>ComSpecd6a2c134_07a3ba93a1b3c057</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaRlesLine</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="D5F36E80-98A1-4B84-A90E-059C8AEC929B">
+                                            <SHORT-NAME>EPBCalprDrvr_stMotCmd</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stMotCmd/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>ComSpec810ba193_fc016d4d18965f8f</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stMotCmd</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="3DBEAB1F-761C-4059-8A2C-FCCC54E13BF4">
+                                            <SHORT-NAME>EPBCalprDrvr_stHwDrvrCmd</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stHwDrvrCmd/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>ComSpecd9402e56_5b24e47dc704ae01</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stHwDrvrCmd</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="5E536501-0CDA-4F65-A8A6-CF36C8FC04F0">
+                                            <SHORT-NAME>IoHwAb_EPBHb</SHORT-NAME>
+                                            <REQUIRED-INTERFACE-TREF DEST="CLIENT-SERVER-INTERFACE">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                    </PORTS>
+                                    <INTERNAL-BEHAVIORS>
+                                        <SWC-INTERNAL-BEHAVIOR UUID="70597052-F313-48FB-8E16-DC9F764B42FB">
+                                            <SHORT-NAME>EPBCalprDrvr_DD_InternalBehavior</SHORT-NAME>
+                                            <DATA-TYPE-MAPPING-REFS>
+                                                <DATA-TYPE-MAPPING-REF DEST="DATA-TYPE-MAPPING-SET">/UAES/ASW/DataTypeMappingSets/DTMS_EPBCalprDrvr_DD</DATA-TYPE-MAPPING-REF>
+                                            </DATA-TYPE-MAPPING-REFS>
+                                            <AR-TYPED-PER-INSTANCE-MEMORYS>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="4b4a54bb-1466-5641-df51-c14316b0bbd6">
+                                                    <SHORT-NAME>EPBCal_EPBCalprDrvr_stMotSpiCmd</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="6f2a9cfc-568f-518d-4f92-3d976da20f2b">
+                                                    <SHORT-NAME>EPBCal_EPBCalprDrvr_flgSafeClsd</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                                <VARIABLE-DATA-PROTOTYPE UUID="f29e09da-bea2-5037-7774-000507f7a426">
+                                                    <SHORT-NAME>EPBCal_EPBCalprDrvr_flgMotIoCmd</SHORT-NAME>
+                                                    <CATEGORY>VALUE</CATEGORY>
+                                                    <SW-DATA-DEF-PROPS>
+                                                        <SW-DATA-DEF-PROPS-VARIANTS>
+                                                            <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                                <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                                <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                            </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        </SW-DATA-DEF-PROPS-VARIANTS>
+                                                    </SW-DATA-DEF-PROPS>
+                                                    <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/boolean</TYPE-TREF>
+                                                </VARIABLE-DATA-PROTOTYPE>
+                                            </AR-TYPED-PER-INSTANCE-MEMORYS>
+                                            <EVENTS>
+                                                <INIT-EVENT UUID="D8699C50-611C-4A1A-BDE1-20FE749B2C2E">
+                                                    <SHORT-NAME>EPBCalprDrvr_DD_InitEvent</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_DD_InternalBehavior/EPBCalprDrvr_DD_Init</START-ON-EVENT-REF>
+                                                </INIT-EVENT>
+                                                <TIMING-EVENT UUID="AD30D489-27EA-44F9-8151-34451F3DDDE0">
+                                                    <SHORT-NAME>TMT_EPBCalprDrvr_DD_Runnable_10ms</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_DD_InternalBehavior/EPBCalprDrvr_DD_Runnable_10ms</START-ON-EVENT-REF>
+                                                    <PERIOD>0.01</PERIOD>
+                                                </TIMING-EVENT>
+                                            </EVENTS>
+                                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                            <RUNNABLES>
+                                                <RUNNABLE-ENTITY UUID="CD2EA66A-7966-4BC2-88F3-44698248B974">
+                                                    <SHORT-NAME>EPBCalprDrvr_DD_Init</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <SYMBOL>EPBCalprDrvr_DD_Init</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                                <RUNNABLE-ENTITY UUID="F1E71B5E-8C14-412E-8678-A0F88E73CDAB">
+                                                    <SHORT-NAME>EPBCalprDrvr_DD_Runnable_10ms</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <DATA-READ-ACCESSS>
+                                                        <VARIABLE-ACCESS UUID="8b8c7360-eccf-5257-2679-263db14c6e15">
+                                                            <SHORT-NAME>IN_EPBCalprDrvr_flgClsdDrvrMos_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_flgClsdDrvrMos</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgClsdDrvrMos/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="04f3cd9e-9b2b-59b9-ca4b-7c9eae6e20c4">
+                                                            <SHORT-NAME>IN_EPBCalprDrvr_flgSsmEnaLockLine_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_flgSsmEnaLockLine</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaLockLine/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="515bd1d0-d606-5f62-11bd-d8506be03234">
+                                                            <SHORT-NAME>IN_EPBCalprDrvr_flgSsmEnaRlesLine_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_flgSsmEnaRlesLine</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_flgSsmEnaRlesLine/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="a1bb20f1-0f86-5470-db8f-53e3f17e8573">
+                                                            <SHORT-NAME>IN_EPBCalprDrvr_stMotCmd_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_stMotCmd</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stMotCmd/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-READ-ACCESSS>
+                                                    <DATA-WRITE-ACCESSS>
+                                                        <VARIABLE-ACCESS UUID="8b2d9ebe-a929-5c95-cdba-3b176d8846b3">
+                                                            <SHORT-NAME>OUT_EPBCalprDrvr_stHwDrvrCmd_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_stHwDrvrCmd</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/EPBCalprDrvr_stHwDrvrCmd/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-WRITE-ACCESSS>
+                                                    <SERVER-CALL-POINTS>
+                                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="df7a5e4a-0b1a-530b-f6fb-921a118c3e17">
+                                                            <SHORT-NAME>SC_IoHwAb_EPBHb_Set_Mod</SHORT-NAME>
+                                                            <OPERATION-IREF>
+                                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/IoHwAb_EPBHb</CONTEXT-R-PORT-REF>
+                                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/Set_Mod</TARGET-REQUIRED-OPERATION-REF>
+                                                            </OPERATION-IREF>
+                                                            <TIMEOUT>0</TIMEOUT>
+                                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                        <SYNCHRONOUS-SERVER-CALL-POINT UUID="ff178340-4e93-53b7-91f2-7e13b2646cd0">
+                                                            <SHORT-NAME>SC_IoHwAb_EPBHb_Set_Safemod</SHORT-NAME>
+                                                            <OPERATION-IREF>
+                                                                <CONTEXT-R-PORT-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/IoHwAb_EPBHb</CONTEXT-R-PORT-REF>
+                                                                <TARGET-REQUIRED-OPERATION-REF DEST="CLIENT-SERVER-OPERATION">/UAES/ASW/PortInterfaces/IoHwAb_EPBHb/Set_Safemod</TARGET-REQUIRED-OPERATION-REF>
+                                                            </OPERATION-IREF>
+                                                            <TIMEOUT>0</TIMEOUT>
+                                                        </SYNCHRONOUS-SERVER-CALL-POINT>
+                                                    </SERVER-CALL-POINTS>
+                                                    <SYMBOL>EPBCalprDrvr_DD_Runnable_10ms</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                            </RUNNABLES>
+                                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                        </SWC-INTERNAL-BEHAVIOR>
+                                    </INTERNAL-BEHAVIORS>
+                                </APPLICATION-SW-COMPONENT-TYPE>
+                                <SWC-IMPLEMENTATION UUID="bc007677-a02f-5683-71f4-c386ed40a645">
+                                    <SHORT-NAME>EPBCalprDrvr_DD_imp</SHORT-NAME>
+                                    <CODE-DESCRIPTORS>
+                                        <CODE>
+                                            <SHORT-NAME>Code</SHORT-NAME>
+                                            <ARTIFACT-DESCRIPTORS>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>EPBCalprDrvr_DD_c</SHORT-LABEL>
+                                                    <CATEGORY>SWSRC</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>EPBCalprDrvr_DD_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>EPBCalprDrvr_DD_private_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>EPBCalprDrvr_DD_types_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                                <AUTOSAR-ENGINEERING-OBJECT>
+                                                    <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                                    <CATEGORY>SWHDR</CATEGORY>
+                                                </AUTOSAR-ENGINEERING-OBJECT>
+                                            </ARTIFACT-DESCRIPTORS>
+                                        </CODE>
+                                    </CODE-DESCRIPTORS>
+                                    <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                                    <RESOURCE-CONSUMPTION>
+                                        <SHORT-NAME>RsrcCons_EPBCalprDrvr_DD</SHORT-NAME>
+                                    </RESOURCE-CONSUMPTION>
+                                    <SW-VERSION>1.10.1</SW-VERSION>
+                                    <USED-CODE-GENERATOR>Embedded Coder 7.5 (R2020b) 29-Jul-2020</USED-CODE-GENERATOR>
+                                    <VENDOR-ID>0</VENDOR-ID>
+                                    <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/UAES/ASW/SwComponentTypes/EPBCalprDrvr_DD/EPBCalprDrvr_DD_InternalBehavior</BEHAVIOR-REF>
+                                </SWC-IMPLEMENTATION>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

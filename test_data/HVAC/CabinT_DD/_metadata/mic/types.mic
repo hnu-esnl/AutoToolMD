@@ -1,0 +1,18 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:CabinT_DD.c]
+class = SWSRC
+
+[item:CabinT_DD.h]
+class = SWHDR
+
+[item:CabinT_DD_private.h]
+class = SWHDR
+
+[item:CabinT_DD_types.h]
+class = SWHDR
+

@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:KL15PwrSply_ComCnvRx.arxml]
+class = TDATA-ARA
+
+[item:KL15PwrSply_ComCnvRx.c]
+class = SWSRC
+
+[item:KL15PwrSply_ComCnvRx.h]
+class = SWHDR
+
+[item:KL15PwrSply_ComCnvRx_private.h]
+class = SWHDR
+
+[item:KL15PwrSply_ComCnvRx_types.h]
+class = SWHDR
+

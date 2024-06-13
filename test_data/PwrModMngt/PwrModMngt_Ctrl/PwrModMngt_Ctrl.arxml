@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Auto generated XML Component Description for model PwrModMngt_Ctrl
+Model version                : 5.3
+Simulink Coder version       : Simulink Coder 9.4 (R2020b) 29-Jul-2020
+XML source code generated on : Thu Sep 22 11:08:17 2022
+Model Checksum               : 2322404375 2350194851 2048067213 4281181236
+-->
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-2-2.xsd">
+    <AR-PACKAGES>
+        <AR-PACKAGE>
+            <SHORT-NAME>UAES</SHORT-NAME>
+            <AR-PACKAGES>
+                <AR-PACKAGE>
+                    <SHORT-NAME>ASW</SHORT-NAME>
+                    <ELEMENTS>
+                        <SWC-IMPLEMENTATION UUID="4170935e-372b-5473-d36c-8eb9dcb03eb7">
+                            <SHORT-NAME>Implementation</SHORT-NAME>
+                            <CODE-DESCRIPTORS>
+                                <CODE>
+                                    <SHORT-NAME>Code</SHORT-NAME>
+                                    <ARTIFACT-DESCRIPTORS>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>PwrModMngt_Ctrl_c</SHORT-LABEL>
+                                            <CATEGORY>SWSRC</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>PwrModMngt_Ctrl_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                        <AUTOSAR-ENGINEERING-OBJECT>
+                                            <SHORT-LABEL>rtwtypes_h</SHORT-LABEL>
+                                            <CATEGORY>SWHDR</CATEGORY>
+                                        </AUTOSAR-ENGINEERING-OBJECT>
+                                    </ARTIFACT-DESCRIPTORS>
+                                </CODE>
+                            </CODE-DESCRIPTORS>
+                            <PROGRAMMING-LANGUAGE>C</PROGRAMMING-LANGUAGE>
+                            <RESOURCE-CONSUMPTION>
+                                <SHORT-NAME>RsrcCons_PwrModMngt_Ctrl</SHORT-NAME>
+                            </RESOURCE-CONSUMPTION>
+                            <SW-VERSION>5.3.1</SW-VERSION>
+                            <USED-CODE-GENERATOR>Embedded Coder 7.5 (R2020b) 29-Jul-2020</USED-CODE-GENERATOR>
+                            <VENDOR-ID>0</VENDOR-ID>
+                            <BEHAVIOR-REF DEST="SWC-INTERNAL-BEHAVIOR">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/InternalBehavior</BEHAVIOR-REF>
+                        </SWC-IMPLEMENTATION>
+                    </ELEMENTS>
+                    <AR-PACKAGES>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>SwComponentTypes</SHORT-NAME>
+                            <ELEMENTS>
+                                <APPLICATION-SW-COMPONENT-TYPE UUID="f5f4e868-c10f-5da0-76d1-ec08bcc70776">
+                                    <SHORT-NAME>PwrModMngt_Ctrl</SHORT-NAME>
+                                    <PORTS>
+                                        <R-PORT-PROTOTYPE UUID="03938b7d-93e8-51cd-d878-01f0af6a6388">
+                                            <SHORT-NAME>gPwrModMngt_u8RLSeatOccpdSwt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatOccpdSwt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatOccpdSwt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="6d6eb58e-dcfb-5482-ecdc-c6d27e04c5ec">
+                                            <SHORT-NAME>gPwrModMngt_u8RRSeatOccpdSwt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatOccpdSwt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatOccpdSwt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <R-PORT-PROTOTYPE UUID="9c9e3954-11af-5c76-27fc-b53f33825cbb">
+                                            <SHORT-NAME>gPwrModMngt_u8RMSeatOccpdSwt</SHORT-NAME>
+                                            <REQUIRED-COM-SPECS>
+                                                <NONQUEUED-RECEIVER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatOccpdSwt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <ALIVE-TIMEOUT>0</ALIVE-TIMEOUT>
+                                                    <ENABLE-UPDATE>false</ENABLE-UPDATE>
+                                                    <HANDLE-NEVER-RECEIVED>false</HANDLE-NEVER-RECEIVED>
+                                                    <HANDLE-TIMEOUT-TYPE>NONE</HANDLE-TIMEOUT-TYPE>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-RECEIVER-COM-SPEC>
+                                            </REQUIRED-COM-SPECS>
+                                            <REQUIRED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatOccpdSwt</REQUIRED-INTERFACE-TREF>
+                                        </R-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="66316c56-33aa-5586-4cc8-c0845e849285">
+                                            <SHORT-NAME>gPwrModMngt_u8RLSeatSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="57f94ec5-d0d8-5b42-3adf-70ad4efede59">
+                                            <SHORT-NAME>gPwrModMngt_u8RRSeatSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                        <P-PORT-PROTOTYPE UUID="162c9be4-178b-5b93-e4af-409fec2c5805">
+                                            <SHORT-NAME>gPwrModMngt_u8RMSeatSt</SHORT-NAME>
+                                            <PROVIDED-COM-SPECS>
+                                                <NONQUEUED-SENDER-COM-SPEC>
+                                                    <DATA-ELEMENT-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatSt/Val</DATA-ELEMENT-REF>
+                                                    <HANDLE-OUT-OF-RANGE>NONE</HANDLE-OUT-OF-RANGE>
+                                                    <USES-END-TO-END-PROTECTION>false</USES-END-TO-END-PROTECTION>
+                                                    <INIT-VALUE>
+                                                        <NUMERICAL-VALUE-SPECIFICATION>
+                                                            <SHORT-LABEL>DefaultInitValue_uint8</SHORT-LABEL>
+                                                            <VALUE>0</VALUE>
+                                                        </NUMERICAL-VALUE-SPECIFICATION>
+                                                    </INIT-VALUE>
+                                                </NONQUEUED-SENDER-COM-SPEC>
+                                            </PROVIDED-COM-SPECS>
+                                            <PROVIDED-INTERFACE-TREF DEST="SENDER-RECEIVER-INTERFACE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatSt</PROVIDED-INTERFACE-TREF>
+                                        </P-PORT-PROTOTYPE>
+                                    </PORTS>
+                                    <INTERNAL-BEHAVIORS>
+                                        <SWC-INTERNAL-BEHAVIOR UUID="09185759-ca65-5cf8-de9c-d3bcf064c3aa">
+                                            <SHORT-NAME>InternalBehavior</SHORT-NAME>
+                                            <EVENTS>
+                                                <INIT-EVENT UUID="0a8b3f21-309f-58ec-dbab-48ca890ef835">
+                                                    <SHORT-NAME>PwrModMngt_Ctrl_InitEvent</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/InternalBehavior/PwrModMngt_Ctrl_Runnable_Init</START-ON-EVENT-REF>
+                                                </INIT-EVENT>
+                                                <TIMING-EVENT UUID="37b703b7-14ee-5c65-dd82-579df3518b2e">
+                                                    <SHORT-NAME>TMT_PwrModMngt_Ctrl_Runnable_10ms</SHORT-NAME>
+                                                    <START-ON-EVENT-REF DEST="RUNNABLE-ENTITY">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/InternalBehavior/PwrModMngt_Ctrl_Runnable_10ms</START-ON-EVENT-REF>
+                                                    <PERIOD>0.01</PERIOD>
+                                                </TIMING-EVENT>
+                                            </EVENTS>
+                                            <HANDLE-TERMINATION-AND-RESTART>NO-SUPPORT</HANDLE-TERMINATION-AND-RESTART>
+                                            <RUNNABLES>
+                                                <RUNNABLE-ENTITY UUID="fceaa7a6-de98-51fc-62a2-ae95fba8ab90">
+                                                    <SHORT-NAME>PwrModMngt_Ctrl_Runnable_Init</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <DATA-SEND-POINTS>
+                                                        <VARIABLE-ACCESS UUID="e74760ff-78a7-51fe-d2f3-a789ad86b956">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RLSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RLSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="6e4aa7ce-999a-5c96-ac29-f01c9b654254">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RRSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RRSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="94a3b261-b5d7-55fc-6c8a-f4d9331526e5">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RMSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RMSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-SEND-POINTS>
+                                                    <SYMBOL>PwrModMngt_Ctrl_Runnable_Init</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                                <RUNNABLE-ENTITY UUID="c1c56c53-90cd-575d-af8e-5b632f87ad32">
+                                                    <SHORT-NAME>PwrModMngt_Ctrl_Runnable_10ms</SHORT-NAME>
+                                                    <MINIMUM-START-INTERVAL>0</MINIMUM-START-INTERVAL>
+                                                    <CAN-BE-INVOKED-CONCURRENTLY>false</CAN-BE-INVOKED-CONCURRENTLY>
+                                                    <DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                                        <VARIABLE-ACCESS UUID="da5396cb-0162-5981-ff33-628a0b6d7469">
+                                                            <SHORT-NAME>IN_gPwrModMngt_u8RLSeatOccpdSwt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RLSeatOccpdSwt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatOccpdSwt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="4f305166-daca-53cb-ebad-a480f8a0c283">
+                                                            <SHORT-NAME>IN_gPwrModMngt_u8RMSeatOccpdSwt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RMSeatOccpdSwt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatOccpdSwt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="0a2558e6-bca8-51f7-f638-759676246340">
+                                                            <SHORT-NAME>IN_gPwrModMngt_u8RRSeatOccpdSwt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="R-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RRSeatOccpdSwt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatOccpdSwt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-RECEIVE-POINT-BY-ARGUMENTS>
+                                                    <DATA-SEND-POINTS>
+                                                        <VARIABLE-ACCESS UUID="5cf165e0-a4b6-593d-8cfc-fa7754f921e9">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RLSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RLSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RLSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="d7c67bd9-7485-5ad0-14b7-cbfd263b3912">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RRSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RRSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RRSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                        <VARIABLE-ACCESS UUID="71300ed4-2dee-50ff-e108-72d71ec5ca3d">
+                                                            <SHORT-NAME>OUT_gPwrModMngt_u8RMSeatSt_Val</SHORT-NAME>
+                                                            <ACCESSED-VARIABLE>
+                                                                <AUTOSAR-VARIABLE-IREF>
+                                                                    <PORT-PROTOTYPE-REF DEST="P-PORT-PROTOTYPE">/UAES/ASW/SwComponentTypes/PwrModMngt_Ctrl/gPwrModMngt_u8RMSeatSt</PORT-PROTOTYPE-REF>
+                                                                    <TARGET-DATA-PROTOTYPE-REF DEST="VARIABLE-DATA-PROTOTYPE">/UAES/ASW/PortInterfaces/gPwrModMngt_u8RMSeatSt/Val</TARGET-DATA-PROTOTYPE-REF>
+                                                                </AUTOSAR-VARIABLE-IREF>
+                                                            </ACCESSED-VARIABLE>
+                                                        </VARIABLE-ACCESS>
+                                                    </DATA-SEND-POINTS>
+                                                    <SYMBOL>PwrModMngt_Ctrl_Runnable_10ms</SYMBOL>
+                                                </RUNNABLE-ENTITY>
+                                            </RUNNABLES>
+                                            <SUPPORTS-MULTIPLE-INSTANTIATION>false</SUPPORTS-MULTIPLE-INSTANTIATION>
+                                        </SWC-INTERNAL-BEHAVIOR>
+                                    </INTERNAL-BEHAVIORS>
+                                </APPLICATION-SW-COMPONENT-TYPE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                        <AR-PACKAGE>
+                            <SHORT-NAME>PortInterfaces</SHORT-NAME>
+                            <ELEMENTS>
+                                <SENDER-RECEIVER-INTERFACE UUID="e8b65e62-e5cf-54e9-34da-4d3c446cdcf8">
+                                    <SHORT-NAME>gPwrModMngt_u8RLSeatOccpdSwt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="2d19d825-51c8-52f7-3f83-1f358906d00a">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="3060f207-edbe-5481-a88f-6032ec38cc00">
+                                    <SHORT-NAME>gPwrModMngt_u8RRSeatOccpdSwt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="2ea4428e-7964-5e5a-b85d-91b9abc4bde8">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="44cbea2e-7117-5aff-8ca2-1883302f92cd">
+                                    <SHORT-NAME>gPwrModMngt_u8RMSeatOccpdSwt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="a00247d7-238e-5068-1150-c3c1b0df035b">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="f5c455d6-16d4-543f-2dff-4bcae6ff9f10">
+                                    <SHORT-NAME>gPwrModMngt_u8RLSeatSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="bc4f4fca-190f-5ede-f141-b7776b082de2">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="0bbccbf7-9dd8-53a9-695f-8018b4712589">
+                                    <SHORT-NAME>gPwrModMngt_u8RRSeatSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="4f4ff2a0-6b23-592f-9888-d14fd7d3b29a">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                                <SENDER-RECEIVER-INTERFACE UUID="ae0ff0d1-47ca-5cec-265c-4be997c4f615">
+                                    <SHORT-NAME>gPwrModMngt_u8RMSeatSt</SHORT-NAME>
+                                    <IS-SERVICE>false</IS-SERVICE>
+                                    <DATA-ELEMENTS>
+                                        <VARIABLE-DATA-PROTOTYPE UUID="087fa626-31b2-527c-737d-fa37ae8c6e1b">
+                                            <SHORT-NAME>Val</SHORT-NAME>
+                                            <CATEGORY>VALUE</CATEGORY>
+                                            <SW-DATA-DEF-PROPS>
+                                                <SW-DATA-DEF-PROPS-VARIANTS>
+                                                    <SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                        <SW-CALIBRATION-ACCESS>READ-ONLY</SW-CALIBRATION-ACCESS>
+                                                        <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                                                    </SW-DATA-DEF-PROPS-CONDITIONAL>
+                                                </SW-DATA-DEF-PROPS-VARIANTS>
+                                            </SW-DATA-DEF-PROPS>
+                                            <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/UAES/ASW/ImplementationDataTypes/uint8</TYPE-TREF>
+                                        </VARIABLE-DATA-PROTOTYPE>
+                                    </DATA-ELEMENTS>
+                                </SENDER-RECEIVER-INTERFACE>
+                            </ELEMENTS>
+                        </AR-PACKAGE>
+                    </AR-PACKAGES>
+                </AR-PACKAGE>
+            </AR-PACKAGES>
+        </AR-PACKAGE>
+    </AR-PACKAGES>
+</AUTOSAR>

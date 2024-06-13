@@ -1,0 +1,24 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:KL15PwrSply_Ctrl.arxml]
+class = TDATA-ARA
+
+[item:KL15PwrSply_Ctrl.c]
+class = SWSRC
+
+[item:KL15PwrSply_Ctrl.h]
+class = SWHDR
+
+[item:KL15PwrSply_Ctrl_CW.h]
+class = SWHDR
+
+[item:KL15PwrSply_Ctrl_private.h]
+class = SWHDR
+
+[item:KL15PwrSply_Ctrl_types.h]
+class = SWHDR
+

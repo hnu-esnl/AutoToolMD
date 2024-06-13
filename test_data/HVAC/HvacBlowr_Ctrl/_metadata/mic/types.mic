@@ -1,0 +1,18 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:HvacBlowr_Ctrl.c]
+class = SWSRC
+
+[item:HvacBlowr_Ctrl.h]
+class = SWHDR
+
+[item:HvacBlowr_Ctrl_private.h]
+class = SWHDR
+
+[item:HvacBlowr_Ctrl_types.h]
+class = SWHDR
+

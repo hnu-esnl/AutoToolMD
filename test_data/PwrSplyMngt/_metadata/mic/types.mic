@@ -1,0 +1,6 @@
+[common]
+domain = UAES
+
+[item]
+class = BC
+

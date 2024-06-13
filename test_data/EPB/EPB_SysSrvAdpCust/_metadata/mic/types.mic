@@ -1,0 +1,18 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:EPB_SysSrvAdpCust.c]
+class = SWSRC
+
+[item:EPB_SysSrvAdpCust.h]
+class = SWHDR
+
+[item:EPB_SysSrvAdpCust_private.h]
+class = SWHDR
+
+[item:EPB_SysSrvAdpCust_types.h]
+class = SWHDR
+

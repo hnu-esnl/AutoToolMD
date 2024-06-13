@@ -1,0 +1,9 @@
+[common]
+domain = UAES
+
+[item]
+class = BC
+
+[item:_self]
+class = FC
+

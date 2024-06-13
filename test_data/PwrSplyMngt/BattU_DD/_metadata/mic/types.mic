@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:BattU_DD.arxml]
+class = TDATA-ARA
+
+[item:BattU_DD.c]
+class = SWSRC
+
+[item:BattU_DD.h]
+class = SWHDR
+
+[item:BattU_DD_private.h]
+class = SWHDR
+
+[item:BattU_DD_types.h]
+class = SWHDR
+

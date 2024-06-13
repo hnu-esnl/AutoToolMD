@@ -1,0 +1,21 @@
+[common]
+domain = UAES
+
+[item]
+class = FC
+
+[item:ChrgPlgLock_VD.arxml]
+class = TDATA-ARA
+
+[item:ChrgPlgLock_VD.c]
+class = SWSRC
+
+[item:ChrgPlgLock_VD.h]
+class = SWHDR
+
+[item:ChrgPlgLock_VD_private.h]
+class = SWHDR
+
+[item:ChrgPlgLock_VD_types.h]
+class = SWHDR
+
