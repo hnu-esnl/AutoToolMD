@@ -8,8 +8,8 @@ architecture refactoring tool called AutoToolMD.
 The architecture refactoring algorithm used is mainly in the `networx\algorithms\centrality\betweenness.py` file of networkx codebase.
 We modified and optimized the original community division algorithm in the library.
 
-* Download the `architecture_refactoring_tool` folder locally and click the `architecture_refactoring.exe` file in the folder to run the tool. 
-Upload the autosar compliant automotive software that needs to be refactored (test cases are not provided here due to non-disclosure agreements). After the parsing is successful, 
+* Download the `architecture_refactoring_tool` folder locally and click the `architecture_refactoring.exe` file in the folder to run the tool  (note that the operating system should be Windows). 
+Upload the autosar compliant automotive software that needs to be refactored (We provide an case of an automotive software project called `test_data`). After the parsing is successful, 
 you can view the results after applying the W-GN algorithm to the architecture refactoring.
     *  In the `main interface` of the tool, architecture engineers see the number of software components(SWCs) included in the parsed autosar automotive software, the number of ports, and the top ten SWCs by number of ports.
     *  In the `information interface` of the tool, architecture engineers view basic information about each SWC in the architecture, including SWC name, number of ports, SWC access degree, and owning module.
