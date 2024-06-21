@@ -1,6 +1,6 @@
 # AutoToolMD
 The codebase contains source code and executable packages for automotive software automated 
-architecture refactoring tool called AutoToolMD.
+architecture refactoring tool called AutoToolMD. AutoToolMD only supports running on Windows operating systems.
 
 * In the Architecture refactoring folder of the source code, `main.py` runs the code for the tool interface. 
 `getInformation.py` gets the schema element code for processing the arxml file of the car software. 
